@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feet-inch-cm-calc</title>
+    <link rel="stylesheet" href="./css/feet-inch-cm-calc.css">
+</head>
+<body>
+    <main class="main">
+        <form action="" class="calculator">
+            <h2>Height converter</h2>
+            <label class="input_label" for="feet_value">Enter feet value here (integer required):</label>
+            <input class="input_field" name="feet_input" type="text" id="feet_value">
+            <label class="input_label" for="inch_value">Enter inch value here (decimal required):</label>
+            <input class="input_field" name="inch_input" type="text" id="inch_value">
+            <button type="button" class="calculate_button">Convert to cm</button>
+            <div class="result">
+                <span class="back_ft_input">0</span> ft<span class="back_in_input">0</span>in =
+                <div class="result_output">
+                    <span class="cm_output">0</span> cm
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/feet-inch-cm-calc.js"></script>
+</body>
+</html>
