@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+.game-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    text-align: center;
+    color: rgb(50, 50, 150)
+}
+
+.balloons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    position: relative;
+    align-items: center;
+}
+
+[class*='balloon-'] {
+    position: relative;
+    flex: 0 0 19%;
+    margin: 2px;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 1.8rem 0;
+    text-align: center;
+    user-select: none;
+}
+
+.balloons div:nth-child(3n){
+    background: #ffce00;
+    color: #ffce00;
+}
+
+.balloons div:nth-child(3n-1){
+    background:#3f7abe;
+    color:#3f7abe;
+}
+
+.balloons div:nth-child(3n-2){
+    background:#ff3300;
+    color:#ff3300;
+}
+
+.balloons div:nth-child(10n-5){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+.balloons div:nth-child(13){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+.balloons div:nth-child(20){
+    background:#ff3300;
+    color: #ff3300;
+}
+
+.finished {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 5.9rem;
+    text-align: center;
+    font-size: 4rem;
+    padding: 5.5rem 0;
+    background-color: #fff;
+    color: rgb(200, 25, 25);
+}
+
+.finished > span {
+    color: rgb(50, 100, 150);
+}
+
+.restart_message {
+    font-size: 1rem;
+}
